@@ -182,7 +182,31 @@
 // Ejemplo de .flatMap(): combina map y flat en un solo paso.
 
 // const arr1 = [1, 2, 1];
+// console.log(arr1);
 
-// const result = arr1.flatMap((num) => (num === 2 ? [2, 2] : 1));
+
+// const result = arr1.flatMap((num) => {
+//     return (num === 2 ? ["a", "b"] : 3)
+// });
 
 // console.log(result);
+
+// -------------------------------------------------------------
+
+// Ejemplo de .keys(): crea un iterador para las claves (índices) del array.
+
+// const array1 = ["a", "b", "c"];
+// const iterator = array1.keys();
+
+// for (const key of iterator) {
+//   console.log(key);
+// }
+
+// -------------------------------------------------------------
+// Ejemplo de .lastIndexOf(): encuentra la última posición de un elemento en el array.
+
+const animals = ["Dodo", "Tiger", "Penguin", "Dodo"];
+
+console.log(animals.lastIndexOf("Dodo"));
+
+console.log(animals.lastIndexOf("Tiger"));
